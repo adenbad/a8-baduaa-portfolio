@@ -1,0 +1,304 @@
+/*  ===== Variables  =====  */
+:root {
+  --dark-green: #1D230D; 
+  --accent-green: #ABAF87;
+  --soft-green: #4C4D37;
+  --medium-green: #35361D;
+  --soft-blue: #CAD8E4;
+}
+
+/*  ----- Page layout blocks -----  */
+body {
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 5%;
+  padding: 20px;
+  max-width: 1200px;
+  color: var(--dark-green);
+  font-family: 'Your_Text_Weight_Font', sans-serif;
+}
+
+header {
+  background-color: var(--soft-blue);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--medium-green);
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+main {
+  background-color: var(--accent-green);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--dark-green);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.footer-text {
+  font-size: 14px;
+  opacity: 0.8;
+  padding-top: 10px;
+}
+
+/*  ----- Navigation ----- */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--soft-green);
+  padding: 10px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--soft-blue);
+  background-color: var(--medium-green);
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent-green);
+  color: white;
+}
+
+/*  ----- Typography  ----- */
+p {
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4, h5, h6 { font-size: 1.25em; }
+
+/*  ----- Table ----- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: var(--soft-green);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px;
+  color: var(--dark-green);
+  background-color: var(--soft-blue);
+  border-bottom: 2px solid var(--medium-green);
+}
+
+tr th, tr td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--medium-green);
+}
+
+tr:nth-child(even) {
+  background-color: var(--accent-green);
+}
+
+tr th {
+  background-color: var(--medium-green);
+  color: var(--soft-blue);
+}
+
+tr td:hover {
+  background-color: var(--medium-green);
+  color: white;
+}
+
+/*  ----- Form elements in table cells ----- */
+table input, table select, table textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 0;
+  border: 1px solid var(--medium-green);
+  border-radius: 5px;
+  background-color: var(--soft-green);
+  color: var(--soft-blue);
+}
+
+table input::placeholder, table textarea::placeholder, table select option {
+  color: var(--soft-blue);
+}
+
+/* Input field states */
+table input:focus, table select:focus, table textarea:focus {
+  background-color: var(--soft-green); /* Maintain the same background color */
+  color: var(--soft-blue); /* Maintain the same text color */
+  outline: none; /* Remove default focus outline */
+  border-color: var(--accent-green); /* Change border color on focus for visibility */
+}
+
+/*  ----- Form ----- */
+form {
+  background-color: var(--soft-blue);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 2px solid var(--medium-green);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--dark-green);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--dark-green);
+}
+
+label.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid var(--medium-green);
+  border-radius: 5px;
+  background-color: var(--medium-green);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-green);
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--medium-green);
+  border-radius: 5px;
+  background-color: var(--soft-green);
+  color: var(--soft-blue);
+}
+
+input::placeholder, textarea::placeholder, select option {
+  color: var(--soft-blue);
+}
+
+/*  ----- Gallery ----- */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery figure {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--dark-green);
+  border-radius: 5px;
+  background-color: var(--soft-green);
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.gallery figure figcaption {
+  margin-top: 10px;
+  color: var(--soft-blue);
+  font-style: italic;
+}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {
+  nav {
+      justify-content: center;
+  }
+
+  .local-nav {
+      justify-content: flex-start;
+  }
+}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {
+  nav {
+      justify-content: center;
+  }
+
+  .local-nav {
+      justify-content: space-between;
+  }
+}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {
+  body {
+      background: none;
+      color: black;
+  }
+
+  nav, .local-nav, footer {
+      display: none;
+  }
+
+  table {
+      border: 1px solid black;
+  }
+
+  tr th, tr td {
+      border: 1px solid black;
+  }
+}

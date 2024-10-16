@@ -1,0 +1,49 @@
+### CREATE 1
+POST http://localhost:3000/drugs HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Aspirin",
+    "expiration": "2023-12-31",
+    "quantity": 100
+}
+
+### CREATE 2
+POST http://localhost:3000/drugs HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Ibuprofen",
+    "expiration": "2024-06-15",
+    "quantity": 200
+}
+
+### CREATE 3
+POST http://localhost:3000/drugs HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Paracetamol",
+    "expiration": "2024-01-10",
+    "quantity": 150
+}
+
+### CREATE 4
+POST http://localhost:3000/drugs HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Amoxicillin",
+    "expiration": "2023-11-20",
+    "quantity": 75
+}
+
+### CREATE 5
+POST http://localhost:3000/drugs HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Metformin",
+    "expiration": "2024-03-30",
+    "quantity": 50
+}
